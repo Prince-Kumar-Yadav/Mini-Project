@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            height: 400px;
+            width: 1000px;
+            border: 2px solid red;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <marquee id="mark">RK University Rajkot Gujarat </marquee>
+    <input type="button" id="start" value="start">
+    <input type="button" id="stop" value="stop">
+    <input type="button" id="fast" value="fast">
+
+     
+    <!-- Click button -->
+
+    <p id="p">About me?</p>
+    <button onclick="a()">Click</button>
+
+    <script>
+
+        let mark = document.getElementById("mark");
+        let start = document.getElementById("start");
+        let stop = document.getElementById("stop");
+        let fast = document.getElementById("fast");
+
+        stop.onclick = stopmark;
+        start.onclick = startmark;
+        fast.onclick = fastmark;
+
+
+
+        function stopmark(){ mark.stop();}
+        function startmark(){mark.start()}
+        function fastmark(){ mark.fast();}
+
+
+        document.getElementById("mark").style.backgroundColor="white";
+        document.getElementById("mark").style.fontSize="100px";
+        document.getElementById("mark").style.color="red";
+
+
+
+        document.getElementById("start").style.backgroundColor="orange";
+        document.getElementById("start").style.color="yellow";
+        document.getElementById("stop").style.backgroundColor="black";
+        document.getElementById("stop").style.color="pink";
+        document.getElementById("fast").style.backgroundColor="blue";
+        document.getElementById("fast").style.color="yellow";
+
+        
+
+        function a(){
+        document.getElementById("p").innerHTML="I am Prince kumar yadav   Branch - Betch(IT) <br> Division (E) Roll-no - 21 ";
+        document.getElementById("p").style.color="yellow";
+
+        document.getElementById("p").style.backgroundColor="red";
+        document.getElementById("p").style.fontSize="30px";
+        document.getElementById("p").style.textTransform="capitalize";
+        // document.getElementById("p").style.borderedius="10px";
+    }
+
+
+
+
+    </script>
+</body>
+</html>

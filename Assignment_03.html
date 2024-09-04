@@ -1,0 +1,77 @@
+<html>
+   <head>
+      <title>Registration form</title>
+      <style>
+        body{
+			background-color: rgb(189, 254, 182);
+		}
+		form{
+		    margin:50px;
+			padding:20px;
+			width:350px;
+			height:450px;
+			background-color:white;
+		}
+	    .hello{
+		  background-color: rgb(5, 5, 137);
+		  height:40px;
+		  text-align:center;
+		  font-size:28px;
+		  color:white;
+		}
+	    #fname{
+		    height:40px;
+			margin-left:0px;
+			width:50%;
+		}
+	    #lname{
+		   height:40px;
+		   width:50%;
+		   margin-left:50%;
+		   margin-top:-55px;
+		}
+		#email{
+		   width:100%
+		}
+		#number{
+		width:100%;
+		}
+		#buttom{
+		  width:100%;
+		  height:40px;
+		  background-color:rgba(0, 0, 255, 0.849);
+		  color:white;
+		  }
+	  </style>
+   </head>
+   <body>
+        <form>
+		  <p class="hello">Rgistration Form</p>
+		  <p id="fname"><label for="fname">First name:</label><br>
+		  <input type="text"></p>
+		  <p id="lname"><label for="fname">First name:</label>
+		  <input type="text"></p><br>
+		  <label>Email</label><br>
+		  <input type="email" id="email"><br><br>
+		  <label>Phone</label><br>
+		  <input type="number" id="number"><br><br>
+		  <p id="fname"><label for="fname">City:</label><br>
+		  <select>
+		       <option>Patna</option>
+			   <option>Rajkot</option>
+			   <option>Mumbai</option>
+			   <option>Delhi</option>
+		  </select>
+		  </p>
+		  <p id="lname"><label for="fname">Country:</label><br>
+		  <select>
+		       <option>India</option>
+			   <option>Landan</option>
+			   <option>America</option>
+			   <option>japan</option>
+		  </select>
+		  </p><br>
+		  <p><input type="button" value="Get Start" id="buttom" /> </p>
+        </form>
+   </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       background:red;
+    }
+    form{
+        margin: 50px;
+        padding: 20px;
+        width: 350px;
+        height: 450px;
+        background-color: white;
+    }
+    .hello{
+        background-color:blue;
+        height: 40px;
+        text-align: center;
+        font-size: 28px;
+    }
+    #Fname{
+        height: 40px;
+        margin-left: 0px;
+        width: 50%;
+    }
+    #Lname{
+        height: 40px;
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -55px;
+    }
+    #Email{
+        width: 100%;
+    }
+    #Number{
+        width: 100%;
+    }
+    #buttom{
+        width: 100%;
+        height: 40px;
+        background: blue;
+        margin-bottom: 10px;
+    }
+    #City{
+        height: 40px;
+        margin-left: 0px;
+        width: 50%;
+    }
+    #oCuntry{
+        height: 40px;
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -55px;
+    }
+
+</style>
+<body>
+    <form>
+        <p class="hello">Rgistration Form</p>
+        <p id="Fname"><label for="fname">First name:</label><br>
+        <input type="text"></p>
+        <p id="Lname"><label for="Lname">First name:</label>
+        <input type="text"></p><br>
+        <label>Email</label><br>
+        <input type="Email" id="Email"><br><br>
+        <label>Phone</label><br>
+        <input type="Number" id="Number"><br><br>
+        <p id="City"><label for="City">City:</label><br>
+            <select>
+                <option>Patna<option>
+                <option>Mumbai<option>
+                <option>Rajkot<option>
+                <option>Delhi<option>
+           </select>
+           </p>
+           <p id="Country"><label for="Country">Country:</label><br>
+           <select>
+                <option>India<option>
+                <option>Rusia<option>
+                <option>America<option>
+                <option>Lundan<option>
+           </select>
+           </p><br>
+           <p><input type="submit" value="Get Started" id="buttom"/> </p><br>
+        </form> 
+</body>
+</html>

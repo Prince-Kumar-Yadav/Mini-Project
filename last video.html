@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment10</title>
+    <style>
+        .container button{
+           width: 100px;
+           height: 30px;
+           /* text-align: center; */
+           position: relative;
+           left: 600px;
+          
+        }
+        .video{
+            margin-top: 50px;
+            margin-left:500px;
+        }
+        .video h1{
+            margin-left: 100px;
+        }
+        .button2{
+            height: 50px;
+            width: 70px;
+            color: aqua;
+            background-color: blue;
+            top: 5px;
+            position: relative;
+            right: 380px;
+            top: -20px;
+        }
+        .button2:hover{
+            color: red;
+            background-color: chartreuse;
+        }
+        .red{
+            position: relative;
+            left: 520px;
+            top: 0px;
+        }
+        h1{
+            color: aqua;
+            position: relative;
+            top: -60px;
+            left: 120px;
+        }
+        img{
+            position: relative;
+            left: 680px;
+            top: 0px;
+
+        }
+        iframe{
+            position: relative;
+            top: -70px;
+        }
+
+    </style>
+</head>
+<body id="main">
+    <div class="container">
+        <button class="red" style="background-color: red;" id="red" onclick="red()">R</button>
+        <button class="red" style="background-color: yellow;" id="red" onclick="yellow()">Y</button>
+        <button class="red" style="background-color: green;" id="red" onclick="green()">G</button>
+        <button class="red" style="background-color:blue;" id="red" onclick="blue()">b</button>   
+    </div>
+    <img src="data:image/png;base64,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" alt="">
+    <div class="video">
+        <h1>Prince Yadav</h1>
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/DD1O-yX9dik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <button class="button2">Play</button>
+        <button class="button2">Pause</button>
+
+
+
+    </div>
+
+</body>
+
+    <script>
+    function red(){
+       document.getElementById("main").style.backgroundColor="red";
+   }
+   function yellow (){
+       document.getElementById("main").style.backgroundColor="yellow";
+   }
+   function green(){
+       document.getElementById("main").style.backgroundColor="green";
+   }
+   function blue(){
+       document.getElementById("main").style.backgroundColor="blue";
+   }
+</script> 
+</html>
